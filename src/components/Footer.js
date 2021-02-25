@@ -25,8 +25,11 @@ function Footer(){
 
             <a href="https://twitter.com/JZolo" >
                 <StyledImg src="/images/twitterIcon.png" alt="twitter logo"/>
-            </a>            
-        
+            </a>  
+
+            <a href="https://jzolotarev.medium.com/" >
+                <StyledImg src="/images/mediumIcon.png" alt="medium logo"/>
+            </a>           
         </StyledDiv>
     )
 }
