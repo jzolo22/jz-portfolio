@@ -14,12 +14,14 @@ function Footer(){
 
     return (
         <StyledDiv> 
-
-            <StyledImg src="/images/githubIcon.png" alt="github logo"/>
-
-            <div>
-                Julia Zolotarev © 2021 
-            </div>
+            <a href="https://github.com/jzolo22" >
+                <StyledImg src="/images/githubIcon.png" alt="github logo"/>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/jzolotarev/" >
+                <StyledImg src="/images/linkedinIcon.png" alt="linkedin logo"/>
+            </a>
+            
         
         </StyledDiv>
     )
