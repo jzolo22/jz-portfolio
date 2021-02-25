@@ -7,9 +7,10 @@ function Footer(){
 
     const StyledDiv = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;    
     align-items: center;
+    gap: 5%;
     `
 
     return (
@@ -21,7 +22,10 @@ function Footer(){
             <a href="https://www.linkedin.com/in/jzolotarev/" >
                 <StyledImg src="/images/linkedinIcon.png" alt="linkedin logo"/>
             </a>
-            
+
+            <a href="https://twitter.com/JZolo" >
+                <StyledImg src="/images/twitterIcon.png" alt="twitter logo"/>
+            </a>            
         
         </StyledDiv>
     )
