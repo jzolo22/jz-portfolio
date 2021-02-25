@@ -37,6 +37,7 @@ code {
 
 .footer { 
   grid-area: 12 / 1 / 13 / 6; 
+  display: grid;
 }
 
 
