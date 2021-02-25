@@ -33,7 +33,9 @@ function Footer(){
 
             <a href="https://www.youtube.com/channel/UCEZuU86dwUCBBkLUr24e6GA/videos" >
                 <StyledImg src="/images/youtubeIcon.png" alt="medium logo"/>
-            </a>         
+            </a>        
+
+            {/* <div style={{fontSize: "12px"}}>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>  */}
         </StyledDiv>
     )
 }

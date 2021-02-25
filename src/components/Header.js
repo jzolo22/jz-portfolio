@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import StyledImg from './StyledImg'
 
 
 
@@ -16,7 +17,8 @@ function Header(){
     return (
         <StyledDiv >
             <NavLink to="/" className="link">
-                Home
+                <StyledImg src="/images/ice-cream.png"/>
+                {/* <span>About</span> */}
             </NavLink>
 
             <NavLink to="/projects" className="link">
