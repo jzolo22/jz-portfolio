@@ -29,7 +29,11 @@ function Footer(){
 
             <a href="https://jzolotarev.medium.com/" >
                 <StyledImg src="/images/mediumIcon.png" alt="medium logo"/>
-            </a>           
+            </a>   
+
+            <a href="https://www.youtube.com/channel/UCEZuU86dwUCBBkLUr24e6GA/videos" >
+                <StyledImg src="/images/youtubeIcon.png" alt="medium logo"/>
+            </a>         
         </StyledDiv>
     )
 }
