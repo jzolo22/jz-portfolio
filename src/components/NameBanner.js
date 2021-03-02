@@ -7,14 +7,14 @@ const Banner = styled.div`
 
 
 const NameBanner = ({ names }) => {
-    const [name, setName] = useState("")
+    const [name, setName] = useState("Julia")
 
     const chNames = (names, i) => {
         setInterval(
             function() {
                 i++;
-                setName(names[i])
                 console.log(i)
+                setName(names[i])
                 i %= names.length;
             },
             3000
@@ -22,7 +22,7 @@ const NameBanner = ({ names }) => {
     }
 
     useEffect(() => {
-        chNames(names, 0)
+        chNames(names, -1)
     }, [])
 
     console.log(name)
