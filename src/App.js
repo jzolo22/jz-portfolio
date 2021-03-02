@@ -9,21 +9,21 @@ import About from './Pages/About';
 function App() {
   return (
     <div className="main">
+      
       <div className="header">
         <Header />
       </div>
-      <div className="center">
 
-      </div>
+      <div className="center">
         <Switch>
-          
           <Route path="/about" component={About} />
           {/* <Route path="/projects" component={ProjectContainer} /> */}
           {/* <Route path="/blogs" component={BlogContainer} /> */}
           {/* <Route path="/misc" component={JustForFun} /> */}
           <Route path="/" component={Home} />
-
         </Switch>
+      </div>
+        
       <div className="footer">
         <Footer />
       </div>
