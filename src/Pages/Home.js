@@ -3,8 +3,10 @@ import NameBanner from '../components/NameBanner'
 
 
 function Home(){
+    const names = ["Julia", "Юля", "Júlia", "Giulia"]
+    
     return (
-        <NameBanner />
+        <NameBanner names={names}/>
     )
 }
 
