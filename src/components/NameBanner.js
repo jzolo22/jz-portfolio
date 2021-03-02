@@ -9,10 +9,10 @@ const Name = styled.h1`
 function NameBanner(){
 
     return (
-        <span>
+        <div>
             {/* <h3>Hi! I'm</h3> */}
             <Name>Julia</Name>
-        </span>
+        </div>
     )
 }
 
