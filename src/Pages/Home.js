@@ -3,7 +3,6 @@ import NameBanner from '../components/NameBanner'
 
 
 function Home(){
-
     return (
         <NameBanner />
     )
