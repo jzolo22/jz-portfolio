@@ -4,7 +4,10 @@ import React from 'react'
 
 function About(){
     return (
-        <div>testing</div>
+        <div>
+            <h3>something</h3>
+        </div>
+        
     )
 }
 
