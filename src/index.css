@@ -43,6 +43,7 @@ a {
 
 .center { 
   grid-area: 2 / 1 / 12 / 6; 
+  display: grid;
 }
 
 .footer { 
