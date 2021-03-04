@@ -23,7 +23,7 @@ const NameBanner = ({ names }) => {
 
     useEffect(() => {
         chNames(names, -1)
-    }, [])
+    }, [names])
 
     console.log(name)
     return (
