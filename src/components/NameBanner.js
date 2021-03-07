@@ -14,7 +14,6 @@ function NameBanner ({ names }) {
         window.setInterval(() => {
                 setI(i => i + 1)
                 // setI(i => i %= names.length)
-                // i %= names.length;
             }, 1000
         );
     }, [])
