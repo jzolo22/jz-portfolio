@@ -8,19 +8,28 @@ const Banner = styled.div`
 
 function NameBanner ({ names }) {
     const [i, setI] = useState(0)
+    const [isRunning, setIsRunning] = useState(true)
+    // const [intervalId, setIntervalId] = useState(null)
  
     useEffect(() => {
-        window.setInterval(() => {
-                setI(i => i + 1)
-                // setI(i => i %= names.length)
-            }, 1000
-        );
-    }, [])
+        if (isRunning){
+            const id = window.setInterval(() => {
+                    setI(i => i + 1)
+                    // setI(i => i %= names.length)
+                }, 1000
+            );
+            return () => window.clearInterval(id)
+        }
+    }, [isRunning])
+
+    
+    
 
     return (
         <Banner>
             <h3>Hi! I'm</h3>
             <h1>{names[i]}</h1>
+            {i === names.length ? setI(0) : null}
         </Banner>
     )
 }
