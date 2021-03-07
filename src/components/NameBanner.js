@@ -9,7 +9,6 @@ const Banner = styled.div`
 function NameBanner ({ names }) {
     const [i, setI] = useState(0)
  
-
     useEffect(() => {
         window.setInterval(() => {
                 setI(i => i + 1)
@@ -18,7 +17,6 @@ function NameBanner ({ names }) {
         );
     }, [])
 
-   console.log(i)
     return (
         <Banner>
             <h3>Hi! I'm</h3>
