@@ -29,7 +29,7 @@ const NameBanner = ({ names }) => {
     return (
         <Banner>
             <h3>Hi! I'm</h3>
-            <h1>{name}</h1>
+            <h1 style={{fontFamily: "Courgette"}}>{name}</h1>
         </Banner>
     )
 }

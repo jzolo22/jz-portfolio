@@ -10,7 +10,7 @@ body {
   font-size: 32px;
       }
       div:nth-child(1) {
-        font-family: 'Flamenco', serif;
+        font-family: 'Garamond', serif;
       }
       div:nth-child(2) {
         font-family: 'Asap', sans-serif;
