@@ -6,30 +6,24 @@ const Banner = styled.div`
 `
 
 
-const NameBanner = ({ names }) => {
-    const [name, setName] = useState("Julia")
-
-    const chNames = (names, i) => {
-        setInterval(
-            function() {
-                i++;
-                console.log(i)
-                setName(names[i])
-                i %= names.length;
-            },
-            3000
-        );
-    }
+function NameBanner ({ names }) {
+    const [i, setI] = useState(0)
+ 
 
     useEffect(() => {
-        chNames(names, -1)
-    }, [names])
+        window.setInterval(() => {
+                setI(i => i + 1)
+                // setI(i => i %= names.length)
+                // i %= names.length;
+            }, 1000
+        );
+    }, [])
 
-    console.log(name)
+   console.log(i)
     return (
         <Banner>
             <h3>Hi! I'm</h3>
-            <h1>{name}</h1>
+            <h1>{names[i]}</h1>
         </Banner>
     )
 }
