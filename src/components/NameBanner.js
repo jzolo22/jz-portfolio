@@ -16,18 +16,15 @@ function NameBanner ({ names }) {
             const id = window.setInterval(() => {
                     setI(i => i + 1)
                     // setI(i => i %= names.length)
-                }, 1000
+                }, 1500
             );
             return () => window.clearInterval(id)
         }
     }, [isRunning])
 
-    
-    
 
     return (
         <Banner>
-            <h3>Hi! I'm</h3>
             <h1>{names[i]}</h1>
             {i === names.length ? setI(0) : null}
         </Banner>
