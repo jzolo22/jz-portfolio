@@ -2,34 +2,35 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 const Banner = styled.div`
-    transform: translateY(-20%);
+    // transform: translateY(-20%);
+    grid-area: 1 / 1 / -1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 
-const NameBanner = ({ names }) => {
-    const [name, setName] = useState("Julia")
-
-    const chNames = (names, i) => {
-        setInterval(
-            function() {
-                i++;
-                console.log(i)
-                setName(names[i])
-                i %= names.length;
-            },
-            3000
-        );
-    }
-
+function NameBanner ({ names }) {
+    const [i, setI] = useState(0)
+    const [isRunning, setIsRunning] = useState(true)
+    // const [intervalId, setIntervalId] = useState(null)
+ 
     useEffect(() => {
-        chNames(names, -1)
-    }, [])
+        if (isRunning){
+            const id = window.setInterval(() => {
+                    setI(i => i + 1)
+                    // setI(i => i %= names.length)
+                }, 1500
+            );
+            return () => window.clearInterval(id)
+        }
+    }, [isRunning])
 
-    console.log(name)
+
     return (
         <Banner>
-            <h3>Hi! I'm</h3>
-            <h1>{name}</h1>
+            <h1>{names[i]}</h1>
+            {i === names.length ? setI(0) : null}
         </Banner>
     )
 }
