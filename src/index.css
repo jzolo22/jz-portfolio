@@ -43,10 +43,9 @@ a {
 
 .center { 
   grid-area: 2 / 1 / 12 / 6; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(9, 1fr);
 }
 
 .footer { 

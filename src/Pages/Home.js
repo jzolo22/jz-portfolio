@@ -1,5 +1,10 @@
 import React from 'react'
 import NameBanner from '../components/NameBanner'
+import styled from 'styled-components'
+
+const StyledHi = styled.div`
+    grid-area: 3 / 4 / -1 / -1
+`
 
 
 function Home(){
@@ -7,9 +12,9 @@ function Home(){
 
     return (
         <>
-        <div>
+        <StyledHi>
             <h3>Hi! I'm</h3>
-        </div>
+        </StyledHi>
         <NameBanner names={names}/>
         </>
     )

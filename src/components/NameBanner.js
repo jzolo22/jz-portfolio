@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 const Banner = styled.div`
-    transform: translateY(-20%);
+    // transform: translateY(-20%);
+    grid-area: 1 / 1 / -1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 
