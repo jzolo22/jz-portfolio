@@ -39,6 +39,9 @@ a {
 .header { 
   grid-area: 1 / 1 / 1 / 6;  
   display: grid;
+  /* position: fixed; */
+    /* top: 0px; */
+    /* left: 0px; */
 }
 
 .center { 
