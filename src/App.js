@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './Pages/Home';
@@ -14,15 +15,17 @@ function App() {
         <Header />
       </div>
 
-      <div className="center">
-        <Switch>
-          <Route path="/about" component={About} />
-          {/* <Route path="/projects" component={ProjectContainer} /> */}
-          {/* <Route path="/blogs" component={BlogContainer} /> */}
-          {/* <Route path="/misc" component={JustForFun} /> */}
-          <Route path="/" component={Home} />
-        </Switch>
-      </div>
+      <AnimatePresence exitBeforeEnter initial={false}>
+        <div className="center">
+          <Switch>
+            <Route path="/about" component={About} />
+            {/* <Route path="/projects" component={ProjectContainer} /> */}
+            {/* <Route path="/blogs" component={BlogContainer} /> */}
+            {/* <Route path="/misc" component={JustForFun} /> */}
+            <Route path="/" component={Home} />
+          </Switch>
+        </div>
+      </AnimatePresence>
         
       <div className="footer">
         <Footer />
