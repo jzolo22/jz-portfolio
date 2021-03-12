@@ -1,12 +1,12 @@
 import React from 'react'
 import NameBanner from '../components/NameBanner'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import { motion } from 'framer-motion';
 
 
-const StyledHi = styled.div`
-    grid-area: 3 / 4 / -1 / -1
-`
+// const StyledHi = styled.div`
+//     grid-area: 3 / 4 / -1 / -1
+// `
 
 
 function Home(){
@@ -21,9 +21,9 @@ function Home(){
             transition={{ duration: 0.5 }}
             style={{gridArea: "1 / 1 / -1 / -1"}}
         >
-            <StyledHi>
+            <div>
                 <h3 style={{paddingLeft: "20%", paddingTop: "5%"}}>Hi! I'm</h3>
-            </StyledHi>
+            </div>
             <NameBanner names={names}/>
          </motion.div>
         </>

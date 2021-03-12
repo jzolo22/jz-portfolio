@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 // let CenteredDiv = styled.div`
 //     grid-area: 1 / 1 / -1 / -1;
@@ -10,20 +10,17 @@ import styled from 'styled-components'
 
 function About(){
     return (
-        <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        <motion.h1
+        initial={{justifyContent: "center", alignItems: "center", textAlign: "center", fontSize: "30px"}}
+        animate={{ justifyContent: "center", fontSize: "14px", alignItems: "flex-start"}}
         exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
         // animate={{ x: 500 }}
         // transition={{ ease: "easeOut", duration: 2 }}
-        style={{gridArea: "1 / 1 / -1 / -1", textAlign: "center", backgroundColor: "pink"}}
+        style={{gridRowStart: "1", gridRowEnd: "-1", gridColumnStart: "1", gridColumnEnd: "-1", display: "flex", justifyContent: "center", alignItems: "center"}}
         >
-            
-        {/* <CenteredDiv> */}
-                    <h3>something</h3>
-        {/* </CenteredDiv> */}
-            </motion.div>
+                <h1>Julia Zolotarev</h1>
+        </motion.h1>
     )
 }
 

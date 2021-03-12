@@ -12,7 +12,7 @@ const Banner = styled.div`
 
 function NameBanner ({ names }) {
     const [i, setI] = useState(0)
-    const [isRunning, setIsRunning] = useState(true)
+    const [isRunning] = useState(true)
     // const [intervalId, setIntervalId] = useState(null)
  
     useEffect(() => {
