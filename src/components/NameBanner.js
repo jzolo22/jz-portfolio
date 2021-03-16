@@ -2,10 +2,19 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 const Banner = styled.div`
-    display: flex;
-    justify-content: center;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 40%;
+`
+const StyledName = styled.h1`
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
 `
 
+const StyledPara = styled.p`
+    margin-top: 0px;
+`
 
 function NameBanner ({ names }) {
     const [i, setI] = useState(0)
@@ -26,8 +35,9 @@ function NameBanner ({ names }) {
 
     return (
         <Banner>
-            <h1>{names[i]}</h1>
+            <h1>{`${names[i]},`}</h1>
             {i === names.length ? setI(0) : null}
+            <p>a Brooklyn-based Software Developer</p>
         </Banner>
     )
 }
