@@ -1,32 +1,33 @@
 import React from 'react'
 import NameBanner from '../components/NameBanner'
-// import styled from 'styled-components'
+import styled from 'styled-components'
 import { motion } from 'framer-motion';
 
 
-// const StyledHi = styled.div`
-//     grid-area: 3 / 4 / -1 / -1
-// `
+const GridDiv = styled.div`
+    grid-area: 1 / 1 / -1 / -1;
+    display: grid;
+    grid-template-rows: 40%;
+`
+
+const HiImDiv = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5%
+`
 
 
 function Home(){
     const names = ["Julia", "Юля", "Júlia", "Giulia"]
 
     return (
-        <>
-         <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            style={{gridArea: "1 / 1 / -1 / -1"}}
-        >
-            <div>
-                <h3 style={{paddingLeft: "20%", paddingTop: "5%"}}>Hi! I'm</h3>
-            </div>
+        <GridDiv>
+            <HiImDiv>
+                <h3>Hi! I'm</h3>
+            </HiImDiv>
             <NameBanner names={names}/>
-         </motion.div>
-        </>
+        </GridDiv>
 
     )
 }
