@@ -7,14 +7,15 @@ import { motion } from 'framer-motion';
 const GridDiv = styled.div`
     grid-area: 1 / 1 / -1 / -1;
     display: grid;
-    grid-template-rows: 40%;
+    grid-template-rows: 30%;
 `
 
 const HiImDiv = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-end;
-    margin-bottom: 5%
+    // margin-bottom: 5%
+    margin-left: 15%;
 `
 
 
